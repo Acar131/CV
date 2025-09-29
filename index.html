@@ -5,19 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Open CV</title>
   <style>
+    /* Reset some default styles */
     body, html {
       margin: 0;
       padding: 0;
+      height: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f5f7fa;
       color: #333;
     }
 
+    /* Center everything */
     .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
+      padding: 20px;
+      min-height: 100vh;
     }
 
     /* Profile picture */
@@ -50,7 +56,7 @@
       text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     a.button:hover {
@@ -63,6 +69,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 15px;
+      margin-top: 20px;
     }
 
     .skill-box {
@@ -77,6 +84,12 @@
       color: #2c3e50;
     }
 
+    /* Optional simple footer */
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
   </style>
 </head>
 <body>
@@ -86,11 +99,10 @@
 
     <h1>My Open CV</h1>
     <p>You can view or download my CV below:</p>
-
-    <!-- PDF Download Link -->
+    <!-- PDF Link -->
     <a class="button" href="MinCV.pdf" target="_blank">Download CV (PDF)</a>
 
-    <!-- Skills and Languages -->
+    <!-- Skills/Languages Section -->
     <div class="skills">
       <div class="skill-box">HTML</div>
       <div class="skill-box">CSS</div>
@@ -98,9 +110,12 @@
       <div class="skill-box">Python</div>
       <div class="skill-box">English</div>
       <div class="skill-box">Norwegian</div>
-      <!-- Add more skill boxes as needed -->
+      <!-- Add more boxes as needed -->
     </div>
   </div>
+
+  <footer>
+    &copy; 2025 Your Name
+  </footer>
 </body>
 </html>
-
