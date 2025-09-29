@@ -1,121 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Open CV</title>
-  <style>
-    /* Reset some default styles */
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f7fa;
-      color: #333;
-    }
-
-    /* Center everything */
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-      min-height: 100vh;
-    }
-
-    /* Profile picture */
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-      border: 3px solid #007bff;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      color: #2c3e50;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-
-    a.button {
-      display: inline-block;
-      padding: 12px 25px;
-      font-size: 1em;
-      color: white;
-      background-color: #007bff;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      margin-bottom: 30px;
-    }
-
-    a.button:hover {
-      background-color: #0056b3;
-    }
-
-    /* Skills/Languages section */
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .skill-box {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 10px 20px;
-      min-width: 100px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      font-weight: bold;
-      color: #2c3e50;
-    }
-
-    /* Optional simple footer */
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #666;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Profile Picture -->
-    <img class="profile-pic" src="profile.jpg" alt="Your Name">
-
-    <h1>My Open CV</h1>
-    <p>You can view or download my CV below:</p>
-    <!-- PDF Link -->
-    <a class="button" href="MinCV.pdf" target="_blank">Download CV (PDF)</a>
-
-    <!-- Skills/Languages Section -->
-    <div class="skills">
-      <div class="skill-box">HTML</div>
-      <div class="skill-box">CSS</div>
-      <div class="skill-box">JavaScript</div>
-      <div class="skill-box">Python</div>
-      <div class="skill-box">English</div>
-      <div class="skill-box">Norwegian</div>
-      <!-- Add more boxes as needed -->
+<!-- Hero Section -->
+<section id="home" class="section pt-24 pb-16 md:pt-32 md:pb-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="md:flex md:items-center md:justify-between">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">John Doe</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-blue-500 mb-6">Senior Software Engineer</h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                    Passionate about creating elegant solutions to complex problems. 
+                    With 8+ years of experience in full-stack development and team leadership.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                        Contact Me
+                    </a>
+                    <a href="MinCV.pdf" target="_blank" class="border border-blue-500 text-blue-500 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition duration-300">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl">
+                    <!-- Profile image -->
+                    <img src="profile.jpg" alt="John Doe" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</section>
 
-  <footer>
-    &copy; 2025 Your Name
-  </footer>
-</body>
-</html>
+<!-- Skills Section -->
+<section id="skills" class="section py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Skills & Expertise</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Technical Skills -->
+            <div>
+                <h3 class="text-xl font-semibold text-blue-500 mb-6 flex items-center">
+                    <i data-feather="code" class="mr-2"></i> Technical Skills
+                </h3>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-blue-50 text-blue-700 rounded-lg p-3 font-medium text-center">JavaScript</div>
+                    <div class="bg-blue-50 text-blue-700 rounded-lg p-3 font-medium text-center">React.js</div>
+                    <div class="bg-blue-50 text-blue-700 rounded-lg p-3 font-medium text-center">Node.js</div>
+                    <div class="bg-blue-50 text-blue-700 rounded-lg p-3 font-medium text-center">Python</div>
+                </div>
+            </div>
+            
+            <!-- Professional Skills -->
+            <div>
+                <h3 class="text-xl font-semibold text-blue-500 mb-6 flex items-center">
+                    <i data-feather="users" class="mr-2"></i> Professional Skills
+                </h3>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-blue-50 text-blue-700 rounded-lg p-3 font-medium text-center">Team Leadership</div>
+                    <div class="bg-blue-50 text-blue-700 rounded-lg p-3 font-medium text-center">Project Management</div>
+                    <div class="bg-blue-50 text-blue-700 rounded-lg p-3 font-medium text-center">Problem Solving</div>
+                    <div class="bg-blue-50 text-blue-700 rounded-lg p-3 font-medium text-center">Communication</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="text-xl font-bold text-blue-400">CVfolio</span>
+        <p class="text-gray-400 mt-2">&copy; 2025 CVfolio. All rights reserved.</p>
+    </div>
+</footer>
